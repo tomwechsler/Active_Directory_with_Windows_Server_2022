@@ -10,5 +10,6 @@ https://learn.microsoft.com/en-us/defender-for-identity/what-is
 https://learn.microsoft.com/en-us/windows-server/get-started/server-core-app-compatibility-feature-on-demand
 
 **Microsoft Defender for Identity**  
+https://learn.microsoft.com/en-us/defender-for-identity/prerequisites
 
 https://learn.microsoft.com/en-us/defender-for-identity/configure-windows-event-collection
