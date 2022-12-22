@@ -13,3 +13,5 @@ https://learn.microsoft.com/en-us/windows-server/get-started/server-core-app-com
 https://learn.microsoft.com/en-us/defender-for-identity/prerequisites
 
 https://learn.microsoft.com/en-us/defender-for-identity/configure-windows-event-collection
+
+https://learn.microsoft.com/en-us/defender-for-identity/install-sensor
