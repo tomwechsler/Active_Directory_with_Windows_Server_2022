@@ -1,0 +1,19 @@
+Informationen zur Testumgebung
+------------------------------
+
+Domäne: prime.pri
+Externe Domäne: tomsazure.ch
+
+IP-Bereich: 192.168.3.0/24
+
+Hyper-V NAT-Switch Gateway: 192.168.3.2
+
+DC01: 192.168.3.10 (DNS und AD)
+DC02: 192.168.3.11 (DNS und AD)
+
+FILE01: 192.168.3.20 (Azure AD Connect, DHCP und FILE Server)
+
+DHCP: Alle Client Systeme
+
+Die MB Systeme repräsentieren Mobile Clients und die CL Systeme sind
+Desktops.
