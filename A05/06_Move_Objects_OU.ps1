@@ -5,7 +5,7 @@ Get-Command *org*
 Get-Help Get-ADObject -Examples
 
 #Let's search for accounts
-Get-ADObject -SearchBase "DC=corp,DC=pri" -Filter *
+Get-ADObject -SearchBase "DC=prime,DC=pri" -Filter *
 
 #By department
 Get-ADUser -Filter "department -eq 'IT'"
@@ -17,12 +17,12 @@ Get-ADUser -Filter "department -eq 'IT' -and city -eq 'Luzern'"
 Get-ADUser -Filter "department -eq 'IT' -and city -eq 'Luzern'" -Properties department, city | Select-Object name, city, department
 
 #Now we move these three accounts
-Get-ADUser -Filter "department -eq 'IT' -and city -eq 'Luzern'" -Properties department, city | Move-ADObject -TargetPath "OU=Engineers,OU=Luzern,DC=corp,DC=pri"
+Get-ADUser -Filter "department -eq 'IT' -and city -eq 'Luzern'" -Properties department, city | Move-ADObject -TargetPath "OU=Engineers,OU=Luzern,DC=prime,DC=pri"
 
 #Did it work?
 #So we do not get a list
-Get-ADObject -SearchBase "OU=Engineers,OU=Luzern,DC=corp,DC=pri" -Filter *
+Get-ADObject -SearchBase "OU=Engineers,OU=Luzern,DC=prime,DC=pri" -Filter *
 
 #So is better
-$OUpath = "OU=Engineers,OU=Luzern,DC=corp,DC=pri"
+$OUpath = "OU=Engineers,OU=Luzern,DC=prime,DC=pri"
 Get-ADUser -Filter * -SearchBase $OUpath | Select-object Name, UserPrincipalName
