@@ -19,3 +19,6 @@ https://learn.microsoft.com/en-us/defender-for-identity/prerequisites
 https://learn.microsoft.com/en-us/defender-for-identity/configure-windows-event-collection
 
 https://learn.microsoft.com/en-us/defender-for-identity/install-sensor
+
+**Active Directory Replication Check**  
+https://www.microsoft.com/en-us/download/details.aspx?id=30005
