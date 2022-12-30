@@ -1,4 +1,4 @@
-When troubleshooting group policies, do not forget the name resolution (use the command prompt)!
+When troubleshooting group policies, do not forget the name resolution (use the command prompt - on a client)!
 -----------
 
 nslookup domain_name  
