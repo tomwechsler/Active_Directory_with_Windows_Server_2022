@@ -140,12 +140,12 @@ FirstFailure = $null
 }
 
 #Replication Partners  
-$report.ReplicationPartners = (Get-ADReplicationPartnerMetadata -Target $domaincontroller).Partner
+$report.ReplicationPartners = (Get-ADReplicationPartnerMetadata -Target $domaincontroller).Partner  
 $report.LastReplication = (Get-ADReplicationPartnerMetadata -Target $domaincontroller).LastReplicationSuccess
 
 #Replication Failures  
-$report.FailureCount  = (Get-ADReplicationFailure -Target $domaincontroller).FailureCount
-$report.FailureType = (Get-ADReplicationFailure -Target $domaincontroller).FailureType
+$report.FailureCount  = (Get-ADReplicationFailure -Target $domaincontroller).FailureCount  
+$report.FailureType = (Get-ADReplicationFailure -Target $domaincontroller).FailureType  
 $report.FirstFailure = (Get-ADReplicationFailure -Target $domaincontroller).FirstFailureTime
 
 #Format Output  
