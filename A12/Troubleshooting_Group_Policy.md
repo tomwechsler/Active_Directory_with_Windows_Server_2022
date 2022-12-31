@@ -130,7 +130,7 @@ Get-ADReplicationFailure -Target "Default-First-Site-Name" -Scope Site
 #Active Directory Domain Controller Replication Status  
 $domaincontroller = Read-Host 'What is your Domain Controller?'
 
-#Define Objects
+#Define Objects  
 $report = New-Object PSObject -Property @{
 ReplicationPartners = $null
 LastReplication = $null
@@ -139,16 +139,16 @@ FailureType = $null
 FirstFailure = $null
 }
 
-#Replication Partners
+#Replication Partners  
 $report.ReplicationPartners = (Get-ADReplicationPartnerMetadata -Target $domaincontroller).Partner
 $report.LastReplication = (Get-ADReplicationPartnerMetadata -Target $domaincontroller).LastReplicationSuccess
 
-#Replication Failures
+#Replication Failures  
 $report.FailureCount  = (Get-ADReplicationFailure -Target $domaincontroller).FailureCount
 $report.FailureType = (Get-ADReplicationFailure -Target $domaincontroller).FailureType
 $report.FirstFailure = (Get-ADReplicationFailure -Target $domaincontroller).FirstFailureTime
 
-#Format Output
+#Format Output  
 $report | Select-Object ReplicationPartners,LastReplication,FirstFailure,FailureCount,FailureType | Out-GridView
 
 Enable Group Policy Client Service (gpsvc) logging (use a command prompt with elevated privileges).
