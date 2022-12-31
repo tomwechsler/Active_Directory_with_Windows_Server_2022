@@ -12,10 +12,10 @@ ping prime.pri
 nltest /query  
 (Reports on the state of the secure channel the last time you used it)
 
-nltest /sc_query:prime.pri
+nltest /sc_query:prime.pri  
 (Reports on the state of the secure channel the last time that you used it.)
 
-nltest /dsregdns
+nltest /dsregdns  
 (Refreshes the registration of all DNS records that are specific to a domain controller that you specify.)
 
 **On a domain controller, you can do the following tests:**
