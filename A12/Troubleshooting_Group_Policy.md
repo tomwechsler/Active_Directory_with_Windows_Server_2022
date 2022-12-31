@@ -94,6 +94,10 @@ Step 6 - Force replication
 
 Repadmin /replicate
 
+Step 7 - Show only errors
+
+repadmin /showrepl /errorsonly
+
 Enable Group Policy Client Service (gpsvc) logging (use a command prompt with elevated privileges).
 ----------
 
