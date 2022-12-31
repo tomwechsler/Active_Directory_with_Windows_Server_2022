@@ -15,5 +15,4 @@ FILE01: 192.168.3.20 (Azure AD Connect, DHCP und FILE Server)
 
 DHCP: Alle Client Systeme
 
-Die MB Systeme repräsentieren Mobile Clients und die CL Systeme sind
-Desktops.
+Die MB Systeme repräsentieren Mobile Clients und die CL Systeme sind Desktops.
