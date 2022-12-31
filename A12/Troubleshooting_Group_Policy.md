@@ -1,4 +1,4 @@
-When troubleshooting group policies, do not forget the name resolution (use the command prompt)!
+When troubleshooting group policies, do not forget the name resolution (use the command prompt - on a client)!
 -----------
 
 nslookup domain_name  
@@ -100,6 +100,10 @@ Repadmin /KCC
 Step 6 - Force replication
 
 Repadmin /replicate
+
+Step 7 - Show only errors
+
+repadmin /showrepl /errorsonly
 
 Enable Group Policy Client Service (gpsvc) logging (use a command prompt with elevated privileges).
 ----------
