@@ -7,9 +7,16 @@ nslookup domain_name
 ping prime.pri  
 (the domain should be resolved with the IP address of a domain controller)
 
-nltest /query  
+**The nltest command**  
 
-nltest /sc_query:tomrocks.local
+nltest /query  
+(Reports on the state of the secure channel the last time you used it)
+
+nltest /sc_query:prime.pri
+(Reports on the state of the secure channel the last time that you used it.)
+
+nltest /dsregdns
+(Refreshes the registration of all DNS records that are specific to a domain controller that you specify.)
 
 **On a domain controller, you can do the following tests:**
 
