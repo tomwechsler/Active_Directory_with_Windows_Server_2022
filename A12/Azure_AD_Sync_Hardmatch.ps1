@@ -1,3 +1,5 @@
+#NOTE: Before you proceed with this, you will still want to ensure that the UPN suffixes match the primary email domain on-premises and in the cloud
+
 #Create a variable for the user
 $user = "sina.meier"
 
