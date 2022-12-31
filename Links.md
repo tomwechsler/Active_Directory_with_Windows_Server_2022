@@ -23,7 +23,7 @@ https://learn.microsoft.com/en-us/defender-for-identity/install-sensor
 **Active Directory Replication Check**  
 https://www.microsoft.com/en-us/download/details.aspx?id=30005
 
-**Microsoft Azure**  
+**Microsoft Azure Arc**  
 https://learn.microsoft.com/en-us/azure/azure-arc/servers/overview
 
 **Sysinternals Online Suite**  
